@@ -1,17 +1,7 @@
 $(document).ready(function(){
-    if ($(window).width() < 500){
-        $("#btnNewQuote").appendTo("#quoteBox");
-        $("#btnTweet").appendTo("#quoteBox");
-  }
-    else {
-        $("#btnNewQuote").appendTo("footer");
-        $("#btnTweet").appendTo("footer");
-    }
-    
     $("#btnNewQuote").click(function(){    
         $("#quoteText, #quoteAuthor" ).fadeTo(800, 0);
-        $("#btnNewQuote").prop("disabled", true);
-        
+        $("#btnNewQuote").prop("disabled", true);        
         getNewQuote();      
     });
     $("#btnTweet").click(function(){
