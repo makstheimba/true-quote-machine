@@ -7,6 +7,7 @@ $(document).ready(function(){
     $("#btnNewQuote").click(function(){    
         getNewQuote("#quoteText");
         $( "#quoteText, #quoteAuthor" ).fadeOut('slow', function() {            
+            $("#btnNewQuote").prop("disabled", true);
             $("#quoteAuthor").html(getRandElem(famousPeople));
             $( "#quoteText, #quoteAuthor" ).fadeIn();
         });
