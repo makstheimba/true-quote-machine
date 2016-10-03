@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $("#btnNewQuote").click(function(){    
         $("#quoteText, #quoteAuthor" ).fadeTo(800, 0);
-        $("#btnNewQuote").prop("disabled", true);        
+        $("#btnNewQuote, #btnTweet").prop("disabled", true);        
         getNewQuote();      
     });
     $("#btnTweet").click(function(){
@@ -44,7 +44,7 @@ function getNewQuote(){
         },
         complete: function(){
             $("#quoteText, #quoteAuthor").fadeTo(600, 1);
-            $("#btnNewQuote").prop("disabled", false);
+            $("#btnNewQuote, #btnTweet").prop("disabled", false);
         },
     });
     

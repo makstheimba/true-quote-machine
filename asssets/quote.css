@@ -13,10 +13,13 @@ cite{
 }
 
 #btnNewQuote, #btnTweet{
+    float: right;    
+    margin-right: 20px;
     margin-left:10px;
-    margin-top: -25px;
-    float:right;
-    
+    margin-top: -60px; 
+}
+#btnTweet{
+    margin-right: 90px;
 }
 #quoteText{
     text-align: justify;
@@ -26,23 +29,11 @@ cite{
     #btnNewQuote, #btnTweet{
         float: none;
         margin-top: 0;
+        margin-bottom: 10px;
     }
-    /*footer::after{
-        content: "";
-        display: block;
-        clear: both;
+    #btnNewQuote{
+        float: right;
+        margin-right: 20px;
+        
     }
-    .quote-box::after{
-        content: "";
-        display: block;
-        clear: both;
-    }
-    #btnNewQuote, #btnTweet{
-        margin: 15px 0 10px 10px;
-    }
-    #btnTweet{
-        float: left;
-        margin-left: -15px;
-    }
-    */
 }
