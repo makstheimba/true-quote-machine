@@ -1,0 +1,26 @@
+body{
+    background-color: antiquewhite
+}
+cite{
+    font-size: 18px;
+}
+.quote-box{
+    margin: 15%;
+    padding: 15px 0 5px 15px;
+    border-radius: 8px;
+    background-color: lightgray;
+    box-shadow: 0 0 10px inset;
+}
+
+#btnNewQuote, #btnTweet{
+    margin-left:10px;
+    float:right;    
+}
+#quoteText{
+    text-align: justify;
+}
+@keyframes changeOpacity{
+    0%   { opacity: 0; }
+    50%  { opacity: 0; }
+    100% { opacity: 1; }
+}
