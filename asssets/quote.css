@@ -14,10 +14,10 @@ cite{
 
 #btnNewQuote, #btnTweet{
     float: right;    
-    margin-right: 20px;
-    margin-left:10px;
-    margin-top: -60px; 
+    margin: -60px 20px 0px 10px;
+    
 }
+
 #btnTweet{
     margin-right: 90px;
 }
@@ -28,12 +28,9 @@ cite{
 @media (max-width: 500px){
     #btnNewQuote, #btnTweet{
         float: none;
-        margin-top: 0;
-        margin-bottom: 10px;
+        margin: 0px 20px 10px 6px;
     }
     #btnNewQuote{
-        float: right;
-        margin-right: 20px;
-        
+        float: right;       
     }
 }
